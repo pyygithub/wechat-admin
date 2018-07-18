@@ -1,0 +1,20 @@
+server:
+  port: 8090
+
+#Shiro相关配置
+shiro:
+    #登录页面
+    loginUrl: http://localhost:8080/#/login
+    #盐值
+    salt: pyy
+
+#数据库设置
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/db_wechat?characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false
+    username: root
+    password: 123456
+mybatis:
+  mapper-locations: classpath*:/mappers/**Mapper.xml
